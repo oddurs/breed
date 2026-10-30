@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#f4ead9">
+<title>Pedigree</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <header id="top">
+    <div class="brand">🐾 Pedigree</div>
+    <div class="stats">
+      <span title="Season">📅 <b id="gen">1</b></span>
+      <span title="Coins">🪙 <b id="coins">0</b></span>
+      <span title="Reputation">⭐ <b id="rep">0</b></span>
+    </div>
+  </header>
+
+  <main id="view"></main>
+
+  <button id="breedBtn" class="fab">🐶 Breed litter</button>
+
+  <nav id="tabs">
+    <button data-tab="kennel" class="active">🏠<span>Kennel</span></button>
+    <button data-tab="contracts">📜<span>Contracts</span></button>
+    <button data-tab="market">🛒<span>Market</span></button>
+    <button data-tab="log">📖<span>Log</span></button>
+  </nav>
+</div>
+
+<div id="modal" class="hidden"><div class="sheet" id="sheet"></div></div>
+<div id="toast"></div>
+
+<script src="game.js"></script>
+</body>
+</html>
